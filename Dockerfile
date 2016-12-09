@@ -8,6 +8,7 @@ RUN apt-get install -y python3.5
 RUN apt-get install -y python3-pip
 RUN apt-get install -y python3-aiohttp
 RUN apt-get install -y python3-jinja2
+RUN apt-get install -y python3-pymysql
 RUN DEBIAN_FRONTEND=noninteractive apt install -y mysql-server
 VOLUME /opt/python_test
 ADD casper_jenkins_docker_integration/ /opt/python_test/
