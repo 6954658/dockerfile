@@ -1,6 +1,5 @@
 FROM ubuntu:latest
 MAINTAINER Yingbin(Casper) Zhu "6954658@163.com"
-#RUN export http_proxy="http://web-proxy.jp.hpecorp.net:8080"
 ENV REFRESHED_AT 2016-12-08
 ENV http_proxy="http://web-proxy.jp.hpecorp.net:8080"
 RUN apt-get update
