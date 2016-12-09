@@ -5,5 +5,6 @@ ENV REFRESHED_AT 2016-12-08
 ENV http_proxy="http://web-proxy.jp.hpecorp.net:8080"
 RUN apt-get update
 RUN apt-get install -y python3.5
+RUN apt-get install -y mysql-server
 VOLUME /opt/python_test
 ADD casper_jenkins_docker_integration/ /opt/python_test/
