@@ -9,6 +9,7 @@ RUN apt-get install -y python3-pip
 RUN apt-get install -y python3-aiohttp
 RUN apt-get install -y python3-jinja2
 RUN apt-get install -y python3-pymysql
+RUN apt-get install -y python3-sqlalchemy
 RUN apt-get install -y uwsgi-plugin-asyncio-python3
 RUN DEBIAN_FRONTEND=noninteractive apt install -y mysql-server
 VOLUME /opt/python_test
