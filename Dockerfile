@@ -17,4 +17,3 @@ RUN DEBIAN_FRONTEND=noninteractive apt install -y mysql-server
 VOLUME /opt/python_test
 ADD casper_jenkins_docker_integration/ /opt/python_test/
 ADD casper_download_aiomysql/ /opt/aiomysql/
-RUN python3.5 /opt/aiomysql/setup.py
