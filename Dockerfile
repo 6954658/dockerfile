@@ -30,3 +30,4 @@ RUN yum install -y mysql-community-server
 VOLUME /opt/python_test
 ADD casper_jenkins_docker_integration/ /opt/python_test/
 EXPOSE 80
+ENTRYPOINT ["/opt/python_test/hello_world.py"]
