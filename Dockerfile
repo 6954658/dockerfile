@@ -29,3 +29,4 @@ RUN yum install -y mysql-community-server
 #RUN DEBIAN_FRONTEND=noninteractive apt install -y mysql-server
 VOLUME /opt/python_test
 ADD casper_jenkins_docker_integration/ /opt/python_test/
+EXPOSE 80
