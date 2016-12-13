@@ -5,7 +5,6 @@ ENV REFRESHED_AT 2016-12-08
 ENV http_proxy="http://web-proxy.jp.hpecorp.net:8080"
 ENV https_proxy="http://web-proxy.jp.hpecorp.net:8080"
 ENV ftp_proxy="http://web-proxy.jp.hpecorp.net:8080"
-RUN yum update
 RUN yum -y install yum-utils
 RUN yum -y install https://centos7.iuscommunity.org/ius-release.rpm
 RUN yum -y install python35u
@@ -13,8 +12,8 @@ RUN yum -y install python35u-pip
 RUN pip3.5 install aiohttp
 RUN pip3.5 install jinja2
 RUN pip3.5 install aiomysql
-RUN yum install -y http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm
-RUN yum install -y mysql-community-server
+#RUN yum install -y http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm
+#RUN yum install -y mysql-community-server
 #RUN apt-get update
 #RUN apt-get install -y python3.5
 #RUN apt-get install -y python3-pip
