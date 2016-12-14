@@ -28,5 +28,5 @@ RUN pip3.5 install aiomysql
 #RUN DEBIAN_FRONTEND=noninteractive apt install -y mysql-server
 VOLUME /opt/python_test
 ADD casper_jenkins_docker_integration/ /opt/python_test/
-EXPOSE 80
+EXPOSE 9000
 #ENTRYPOINT ["python3.5","/opt/python_test/hello_world.py"]
